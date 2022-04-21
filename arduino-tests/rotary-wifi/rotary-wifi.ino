@@ -5,8 +5,8 @@
 #include <WiFiUdp.h>
 #include <OSCMessage.h>
 // test network
-char ssid[] = "nestnet";          // your network SSID (name)
-char pass[] = "skynetbutwithfeathers";                    // your network password
+char ssid[] = "";          // your network SSID (name)
+char pass[] = "";                    // your network password
 
 //destination IP
 IPAddress outIp(192, 168, 1, 11); //desktop computer
