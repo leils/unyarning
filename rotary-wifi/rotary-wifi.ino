@@ -30,7 +30,10 @@ String currentDir ="";
 unsigned long lastButtonPress = 0;
 
 void setup() {
-	  // Connect to WiFi network
+	// Setup Serial Monitor
+	Serial.begin(9600);
+
+	// Connect to WiFi network
 	delay(500);
   Serial.println();
   Serial.println();
@@ -57,8 +60,6 @@ void setup() {
 
 	// Set encoder pins as inputs
 	pinMode(CLK,INPUT);
-	// Setup Serial Monitor
-	Serial.begin(9600);
 
 	// Read the initial state of CLK
 	lastStateCLK = digitalRead(CLK);
